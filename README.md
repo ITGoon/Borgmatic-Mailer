@@ -4,8 +4,8 @@ A set of scripts to notify you via email if your Borgmatic-run Borg backups fail
 Written entirely in bash
 
 ## Requirements
-msmtp package
-An SMTP server (I use gmail)
+msmtp package<br>
+An SMTP server (I use gmail)<br>
 
 ## Credits
 https://hostpresto.com/community/tutorials/how-to-send-email-from-the-command-line-with-msmtp-and-mutt/<br>
@@ -14,5 +14,5 @@ https://github.com/witten/borgmatic<br>
 https://www.borgbackup.org/<br>
 https://wiki.debian.org/msmtp<br><br>
 
-## Setup
+## Setup<br>
 1) 
