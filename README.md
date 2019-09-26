@@ -1,7 +1,7 @@
 # Borgmatic Email Notification
 A set of scripts to notify you via email if your Borgmatic-run Borg backups failed or not
 <br><br>
-Written in entirely in bash
+Written entirely in bash
 
 ## Requirements
 msmtp package
