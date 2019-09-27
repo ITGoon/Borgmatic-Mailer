@@ -1,3 +1,4 @@
+# This is the config file for msmtp usually located at /home/USER/.msmtprc or if using root /root/.msmtprc
 # Set default values for all following accounts.
 defaults
 port 587
