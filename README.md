@@ -1,4 +1,4 @@
-# Borgmatic Email Notification
+# Borgmatic Mailer
 This is a set of scripts to notify you via email if your Borgmatic-run Borg backups failed or not.
 <br><br>
 This could probably all be in one bash script but I was writing it quickly cause I am super not cool with no notifications for my backups.
@@ -23,12 +23,12 @@ First we assume you have a some sort of cron entry for borgmatic and also are ge
 <br>
 0 3 * * * root PATH=$PATH:/usr/local/bin /root/.local/bin/borgmatic -v 2 > /var/log/borgmatic.log 2>&1<br><br>
 This entry runs borgmatic at 3 AM nightly and copies the output to a log file at /var/log/borgmatic.log<br>
-If your log is going to be elsewhere edit the BorgMailer scripts to reflect it's location.<br><br>
+If your log is going to be elsewhere edit my Borgmatic Mailer scripts to reflect the location.<br><br>
 1) Install msmtp (For Debian: apt-get install msmtp)<br>
 2) Configure your .msmtprc file (This is your msmtp configuration file), I've included an example for Gmail.<br>
-3) Test your ability to send an email with: echo "This is a test message" | msmtp -a default YourEmail@email.com<br>
+3) Test ability to send an email with: echo "This is a test message" | msmtp -a default YourEmail@email.com<br>
 4) Configure the variables in mailmaker.sh and borg_log_mailer.sh
-5) Edit your borgmatic config.yaml to execute the BorgMailer script (These options are under the hooks section):<br>
+5) Edit your borgmatic config.yaml to execute the Borgmatic Mailer main script (These options are under the hooks section):<br>
     after_backup:<br>
          - bash /root/borg_log_mailer.sh<br>
     on_error:<br>
