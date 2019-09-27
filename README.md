@@ -19,7 +19,7 @@ https://www.borgbackup.org/<br>
 https://wiki.debian.org/msmtp<br><br>
 
 ## Setup
-First we assume you have a some sort of cron entry for borgmatic and also are generating a log file similar to the below:<br>
+First we assume you have some sort of cron entry for borgmatic and also are generating a log file similar to the below:<br>
 <br>
 0 3 * * * root PATH=$PATH:/usr/local/bin /root/.local/bin/borgmatic -v 2 > /var/log/borgmatic.log 2>&1<br><br>
 This cron entry runs borgmatic at 3 AM nightly and copies the output to a log file at /var/log/borgmatic.log (I have it in /etc/cron.d/borgmatic)<br>
