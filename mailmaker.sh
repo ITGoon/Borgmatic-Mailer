@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Set the path to the directory holding the Borgmatic Mailer scripts
+operdir="Path/To/BorgmaticMailerFolder"
+cd $operdir
+
 # Clear the message.txt file or it will be appended to 
 > message.txt
 
@@ -23,4 +27,3 @@ echo ""
 echo "Log file:"
 echo ""
 cat /var/log/borgmatic.log
-
