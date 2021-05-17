@@ -1,4 +1,6 @@
 # Borgmatic Mailer
+<b>This is currently broken, I'll fix it soon</b>
+<br><br>
 This is a set of scripts to notify you via email if your Borgmatic-run Borg backups failed or not. It will also send the log so you can see the size of your backup and other details. 
 <br><br>
 This could probably all be in one bash script but I was writing it quickly cause I am super not cool with no notifications for my backups.
